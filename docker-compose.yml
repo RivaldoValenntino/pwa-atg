@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: pwa-absensi-kepeg-atg
+    build:
+        context: .
+        dockerfile: Dockerfile
+    volumes:
+      - ./public:/app/public
+    ports:
+        - "30017:3001"
+    restart: always
+    environment:
+      - NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=AIzaSyD0aAysLOYcK2rqgCPG0m9UEp4Ld2JCVLU
+      - NEXT_PUBLIC_SECRET_KEY=b647cb27e415b3cb53c868c7e29091011a118dcf053803abc40cd79c8ee4d2a8
+      - NEXT_PUBLIC_API_URL=https://165.22.111.13:30017

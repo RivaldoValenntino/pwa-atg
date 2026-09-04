@@ -1,0 +1,60 @@
+image: php:7.4
+
+stages:
+  - dev
+  - prod
+
+# deploy_development:
+#   type: dev
+#   environment:
+#     name: development
+#     url: 165.22.111.13:30017
+#   script:
+#     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+#     - eval $(ssh-agent -s)
+#     - ssh-add <(echo "$keydevelopmentchrdo")
+#     - mkdir -p ~/.ssh
+#     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+#     - ssh -p 12244 development@165.22.111.13 "cd /home/development/public_html/atg/pwa-absensi-kepeg-atg && git pull origin development && docker compose down && docker compose up -d --build && exit"
+#   only:
+#     - development
+
+
+deploy_development_idch:
+  type: dev
+  environment:
+    name: deployment_dev_idch
+    url: https://pwa.dev.aurorateknoglobal.com
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$keyauroradev")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - ssh -p 2250 aurora@103.67.79.82 "cd /home/aurora/public_html/pwa-absensi-kepeg && git restore docker-compose.yml vite.config.ts src/lib/api.ts && git pull origin development && exit"
+    - scp -P 2250 "$dev_docker_compose" aurora@103.67.79.82:/home/aurora/public_html/pwa-absensi-kepeg/docker-compose.yml
+    - scp -P 2250 "$dev_vite_config_ts" aurora@103.67.79.82:/home/aurora/public_html/pwa-absensi-kepeg/vite.config.ts
+    - scp -P 2250 "$dev_api_ts" aurora@103.67.79.82:/home/aurora/public_html/pwa-absensi-kepeg/src/lib/api.ts
+    - ssh -p 2250 aurora@103.67.79.82 "cd /home/aurora/public_html/pwa-absensi-kepeg && docker compose build --pull && docker compose up -d --build --remove-orphans && exit"
+  only:
+    - development
+
+deploy_production_idch:
+  type: prod
+  environment:
+    name: deployment_prod_idch
+    url: https://pwa.aurorateknoglobal.com
+    # https://pwa.atg.aurorasystem.co.id
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$keyauroraprod")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - ssh -p 2220 aurora@103.67.79.82 "cd /home/aurora/public_html/pwa-absensi-kepeg && git restore docker-compose.yml vite.config.ts src/lib/api.ts && git pull origin production && exit"
+    - scp -P 2220 "$prod_docker_compose" aurora@103.67.79.82:/home/aurora/public_html/pwa-absensi-kepeg/docker-compose.yml
+    - scp -P 2220 "$prod_vite_config_ts" aurora@103.67.79.82:/home/aurora/public_html/pwa-absensi-kepeg/vite.config.ts
+    - scp -P 2220 "$prod_api_ts" aurora@103.67.79.82:/home/aurora/public_html/pwa-absensi-kepeg/src/lib/api.ts
+    - ssh -p 2220 aurora@103.67.79.82 "cd /home/aurora/public_html/pwa-absensi-kepeg && docker compose build --pull && docker compose up -d --build --remove-orphans && exit"
+  only:
+    - production
