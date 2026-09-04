@@ -245,7 +245,7 @@ function RouteComponent() {
         <div className="absolute top-4 left-4 flex items-center space-x-4">
           <Link to="/lainnya">
             <img
-              src="src/assets/ic_arrow_back_white.svg"
+              src="assets/ic_arrow_back_white.svg"
               alt="Back"
               width={30}
               height={30}
@@ -259,7 +259,7 @@ function RouteComponent() {
           <div className="flex flex-row items-center space-x-4">
             {/* Profile Avatar */}
             <img
-              src="src/assets/logo.svg"
+              src="assets/logo.svg"
               alt="Profile Avatar"
               width={60}
               height={60}
@@ -278,21 +278,19 @@ function RouteComponent() {
         {/* Tabs */}
         <div className="absolute bottom-0 left-0 right-0 flex justify-around bg-primary pb-4">
           <button
-            className={`px-6 py-2 rounded-t-lg relative transition-all duration-300 ${
-              activeTab === "Pengajuan"
+            className={`px-6 py-2 rounded-t-lg relative transition-all duration-300 ${activeTab === "Pengajuan"
                 ? "text-white -mb-[2px] font-bold"
                 : "bg-primary text-white opacity-50 font-light"
-            }`}
+              }`}
             onClick={() => setActiveTab("Pengajuan")}
           >
             Pengajuan
           </button>
           <button
-            className={`px-6 py-2 rounded-t-lg relative transition-all duration-300 ${
-              activeTab === "Riwayat"
+            className={`px-6 py-2 rounded-t-lg relative transition-all duration-300 ${activeTab === "Riwayat"
                 ? "text-white -mb-[2px] font-bold"
                 : "bg-primary text-white opacity-50 font-light"
-            }`}
+              }`}
             onClick={() => setActiveTab("Riwayat")}
           >
             Riwayat
@@ -468,7 +466,7 @@ function RouteComponent() {
               />
               <button className="bg-white p-2 rounded-lg shadow-sm border border-gray-300">
                 <img
-                  src="src/assets/ic_filter-filled.svg"
+                  src="assets/ic_filter-filled.svg"
                   alt="Filter Icon"
                   width={20}
                   height={20}

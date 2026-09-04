@@ -36,13 +36,13 @@ const NavigationCard: React.FC<NavigationCardProps> = ({
 const navigationItems = [
   {
     to: "/absen-lembur",
-    imgSrc: "src/assets/ic_riwayat_absen.svg",
+    imgSrc: "assets/ic_riwayat_absen.svg",
     title: "Absen Lembur",
     description: "Lakukan absen lembur pegawai",
   },
   // {
   //   to: "/pengajuan-izin",
-  //   imgSrc: "src/assets/ic_pengajuan_izin.svg",
+  //   imgSrc: "assets/ic_pengajuan_izin.svg",
   //   title: "Pengajuan Izin",
   //   description: "Ajukan proses izin pegawai",
   // },
@@ -65,7 +65,7 @@ function RouteComponent() {
           <div className="flex flex-row items-center space-x-4">
             {/* Profile Avatar */}
             <img
-              src="src/assets/logo.svg"
+              src="assets/logo.svg"
               alt="Profile Avatar"
               width={60}
               height={60}

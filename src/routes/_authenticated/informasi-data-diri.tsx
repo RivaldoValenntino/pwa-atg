@@ -26,7 +26,7 @@ function RouteComponent() {
         <div className="absolute top-4 left-4 flex items-center space-x-4">
           <Link to="/lainnya">
             <img
-              src="src/assets/ic_arrow_back_white.svg"
+              src="assets/ic_arrow_back_white.svg"
               alt="Back"
               width={30}
               height={30}
@@ -40,7 +40,7 @@ function RouteComponent() {
           <div className="flex flex-row items-center space-x-4">
             {/* Profile Avatar */}
             <img
-              src="src/assets/logo.svg"
+              src="assets/logo.svg"
               alt="Profile Avatar"
               width={60}
               height={60}
@@ -59,21 +59,19 @@ function RouteComponent() {
         {/* Tabs */}
         <div className="absolute bottom-0 left-0 right-0 flex justify-around bg-primary pb-4">
           <button
-            className={`px-6 py-2 rounded-t-lg relative transition-all duration-300 ${
-              activeTab === "Diri"
+            className={`px-6 py-2 rounded-t-lg relative transition-all duration-300 ${activeTab === "Diri"
                 ? "text-white -mb-[2px] font-bold"
                 : "bg-primary text-white opacity-50 font-light"
-            }`}
+              }`}
             onClick={() => setActiveTab("Diri")}
           >
             Data Diri
           </button>
           <button
-            className={`px-6 py-2 rounded-t-lg relative transition-all duration-300 ${
-              activeTab === "Pekerjaan"
+            className={`px-6 py-2 rounded-t-lg relative transition-all duration-300 ${activeTab === "Pekerjaan"
                 ? "text-white -mb-[2px] font-bold"
                 : "bg-primary text-white opacity-50 font-light"
-            }`}
+              }`}
             onClick={() => setActiveTab("Pekerjaan")}
           >
             Data Pekerjaan

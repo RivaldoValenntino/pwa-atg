@@ -28,7 +28,7 @@ const CardPengumuman: React.FC<CardPengumumanProps> = ({
         {/* Date */}
         <div className="flex items-center text-gray-500 text-[10px] my-1">
           <img
-            src="/src/assets/ic_clock.svg"
+            src="/assets/ic_clock.svg"
             alt="Clock"
             width={12}
             height={12}

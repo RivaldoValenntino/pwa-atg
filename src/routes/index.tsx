@@ -14,7 +14,7 @@ function HomeComponent() {
         <div className="flex justify-center mb-4">
           <div className="w-24 h-24 rounded-full flex items-center justify-center">
             <img
-              src="/src/assets/logo.svg"
+              src="/assets/logo.svg"
               alt="Logo"
               width={160}
               height={160}
@@ -26,7 +26,7 @@ function HomeComponent() {
         </h1>
         <div className="flex justify-center items-center mb-6">
           <img
-            src="src/assets/ic_splash_screen.svg"
+            src="assets/ic_splash_screen.svg"
             alt="Calendar Illustration"
             width={300}
             height={300}

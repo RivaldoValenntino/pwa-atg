@@ -28,7 +28,7 @@ function RouteComponent() {
         <div className="absolute flex items-center space-x-4">
           <Link to="/info">
             <img
-              src="src/assets/ic_arrow_back_white.svg"
+              src="assets/ic_arrow_back_white.svg"
               alt="Back"
               width={30}
               height={30}

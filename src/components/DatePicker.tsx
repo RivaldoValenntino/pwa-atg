@@ -21,7 +21,7 @@ const DatePicker = ({
 
       {/* Calendar Icon */}
       <img
-        src="src/assets/ic_calendar.svg"
+        src="assets/ic_calendar.svg"
         alt="Calendar Icon"
         width={24}
         height={24}

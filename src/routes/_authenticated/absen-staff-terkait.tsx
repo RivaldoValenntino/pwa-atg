@@ -45,7 +45,7 @@ function RouteComponent() {
         <div className="absolute top-4 left-4 flex items-center space-x-4">
           <Link to="/info">
             <img
-              src="src/assets/ic_arrow_back_white.svg"
+              src="assets/ic_arrow_back_white.svg"
               alt="Back"
               width={30}
               height={30}
@@ -60,7 +60,7 @@ function RouteComponent() {
           <div className="flex flex-row items-center space-x-4">
             {/* Profile Avatar */}
             <img
-              src="src/assets/logo.svg"
+              src="assets/logo.svg"
               alt="Profile Avatar"
               width={60}
               height={60}

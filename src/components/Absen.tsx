@@ -582,7 +582,7 @@ const AbsenCard: React.FC<AbsenCardProps> = ({
           {/* Absen Masuk Button */}
           <div className="flex flex-col items-center space-y-4">
             <img
-              src="src/assets/ic_absen_masuk.svg"
+              src="assets/ic_absen_masuk.svg"
               alt="Absen Masuk"
               width={120}
               height={64}
@@ -605,7 +605,7 @@ const AbsenCard: React.FC<AbsenCardProps> = ({
           {/* Absen Keluar Button */}
           <div className="flex flex-col items-center space-y-4">
             <img
-              src="src/assets/ic_absen_keluar.svg"
+              src="assets/ic_absen_keluar.svg"
               alt="Absen Keluar"
               width={120}
               height={64}
@@ -640,8 +640,8 @@ const AbsenCard: React.FC<AbsenCardProps> = ({
               <img
                 src={
                   absenType === 1
-                    ? "src/assets/ic_lokasi_absen_masuk.svg"
-                    : "src/assets/ic_lokasi_absen_keluar.svg"
+                    ? "assets/ic_lokasi_absen_masuk.svg"
+                    : "assets/ic_lokasi_absen_keluar.svg"
                 }
                 alt="Lokasi Absen"
                 className="mx-auto mb-4"
@@ -736,7 +736,7 @@ const AbsenCard: React.FC<AbsenCardProps> = ({
                 className="flex items-center justify-center px-6 py-3 mx-auto mb-4 text-white rounded-2xl"
               >
                 <img
-                  src="src/assets/ic_button_camera.svg"
+                  src="assets/ic_button_camera.svg"
                   alt="Capture Photo"
                   className="w-24 h-24"
                 />
@@ -749,7 +749,7 @@ const AbsenCard: React.FC<AbsenCardProps> = ({
           <div className="fixed inset-0 z-50 flex items-end justify-center bg-black bg-opacity-50">
             <div className="w-full max-w-md p-6 bg-white rounded-lg">
               <img
-                src="src/assets/ic_terlambat.svg"
+                src="assets/ic_terlambat.svg"
                 alt="Lokasi Absen"
                 className="mx-auto mb-4"
               />

@@ -32,13 +32,12 @@ const LeaveCard: React.FC<LeaveCardProps> = ({
       <div className="flex justify-between items-center">
         <h3 className="text-lg font-semibold">{reason}</h3>
         <span
-          className={`px-3 py-1 text-xs font-bold rounded-full ${
-            status === "0"
+          className={`px-3 py-1 text-xs font-bold rounded-full ${status === "0"
               ? "bg-[#FF8000] text-white" // Menunggu
               : status === "1"
                 ? "bg-[#219653] text-white" // Diterima
                 : "bg-[#EB5757] text-white" // Ditolak
-          }`}
+            }`}
         >
           {status === "0"
             ? "Menunggu"
@@ -51,14 +50,14 @@ const LeaveCard: React.FC<LeaveCardProps> = ({
       {/* Date */}
       <div className="flex items-center text-sm text-gray-500 mt-2 gap-2">
         {/* <CalendarIcon className="h-5 w-5 mr-2" /> */}
-        <img src="src/assets/ic_calendar.svg" alt="" width={24} height={24} />
+        <img src="assets/ic_calendar.svg" alt="" width={24} height={24} />
         {startDate} - {endDate}
       </div>
 
       {/* Description */}
       <div className="flex items-center text-sm text-gray-600 mt-2 gap-2">
         {/* <InformationCircleIcon className="h-5 w-5 mr-2" /> */}
-        <img src="src/assets/ic_duo_info.svg" alt="" width={24} height={24} />
+        <img src="assets/ic_duo_info.svg" alt="" width={24} height={24} />
         {description}
       </div>
 
@@ -66,7 +65,7 @@ const LeaveCard: React.FC<LeaveCardProps> = ({
       {attachmentUrl && (
         <div className="flex items-center text-sm text-blue-600 mt-2 gap-2">
           {/* <PaperClipIcon className="h-5 w-5 mr-2" /> */}
-          <img src="src/assets/ic_file.svg" alt="" width={24} height={24} />
+          <img src="assets/ic_file.svg" alt="" width={24} height={24} />
           <a href={attachmentUrl} target="_blank" rel="noopener noreferrer">
             Lihat Lampiran...
           </a>

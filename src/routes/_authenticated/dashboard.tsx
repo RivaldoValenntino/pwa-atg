@@ -131,7 +131,7 @@ function RouteComponent() {
       <div className="h-48 p-6 mb-6 text-white shadow-md bg-primary rounded-b-2xl sm:flex sm:flex-col sm:items-center sm:justify-center lg:h-64">
         <div className="flex items-center mb-4 ">
           <div className="flex items-center justify-center w-12 h-12 mr-4 text-red-500 bg-white rounded-full">
-            <img src="/src/assets/logo.svg" alt="Logo" />
+            <img src="/assets/logo.svg" alt="Logo" />
           </div>
           <div>
             <p className="text-xs">Halo, Selamat {greeting}</p>
@@ -144,7 +144,7 @@ function RouteComponent() {
           {/* Left Side: Icon with Text */}
           <div className="flex flex-row items-center">
             <img
-              src="src/assets/ic_jabatan_dashboard.svg"
+              src="assets/ic_jabatan_dashboard.svg"
               alt="Icon"
               className="mr-2" // Add spacing between the icon and the text
             />
@@ -159,7 +159,7 @@ function RouteComponent() {
           {/* Right Side: Text */}
           <div className="flex flex-row items-center">
             <img
-              src="src/assets/ic_cabang_dashboard.svg"
+              src="assets/ic_cabang_dashboard.svg"
               alt="Icon"
               className="mr-2" // Add spacing between the icon and the text
             />

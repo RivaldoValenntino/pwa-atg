@@ -90,7 +90,7 @@ function LoginComponent() {
           <div className="flex-1">
             <a href="/">
               <img
-                src="src/assets/ic_arrow_back.svg"
+                src="assets/ic_arrow_back.svg"
                 className="self-start"
                 alt="Back"
                 width={30}
@@ -109,7 +109,7 @@ function LoginComponent() {
         {/* Login Illustration */}
         <div className="flex items-center justify-center mb-6">
           <img
-            src="src/assets/ic_masuk_akun.svg"
+            src="assets/ic_masuk_akun.svg"
             alt="Login"
             width={200}
             height={200}

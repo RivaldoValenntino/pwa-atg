@@ -36,25 +36,25 @@ const NavigationCard: React.FC<NavigationCardProps> = ({
 const navigationItems = [
   {
     to: "/riwayat-absen",
-    imgSrc: "src/assets/ic_riwayat_absen.svg",
+    imgSrc: "assets/ic_riwayat_absen.svg",
     title: "Lihat Riwayat Absen",
     description: "Cek semua data kehadiran Anda",
   },
   // {
   //   to: "/informasi-data-diri",
-  //   imgSrc: "src/assets/ic_data_pribadi.svg",
+  //   imgSrc: "assets/ic_data_pribadi.svg",
   //   title: "Data Pribadi",
   //   description: "Menampilkan data pribadi pegawai",
   // },
   // {
   //   to: "/pengumuman",
-  //   imgSrc: "src/assets/ic_pengumuman_perusahaan.svg",
+  //   imgSrc: "assets/ic_pengumuman_perusahaan.svg",
   //   title: "Pengumuman Perusahaan",
   //   description: "Menampilkan informasi yang berkaitan dengan pegawai",
   // },
   // {
   //   to: "/absen-staff-terkait",
-  //   imgSrc: "src/assets/ic_riwayat_absen.svg",
+  //   imgSrc: "assets/ic_riwayat_absen.svg",
   //   title: "Absen Staff Terkait",
   //   description: "Informasi absen staff",
   // },
@@ -86,7 +86,7 @@ function RouteComponent() {
           <div className="flex flex-row items-center space-x-4">
             {/* Profile Avatar */}
             <img
-              src="src/assets/logo.svg"
+              src="assets/logo.svg"
               alt="Profile Avatar"
               width={60}
               height={60}
@@ -114,7 +114,7 @@ function RouteComponent() {
           className="block bg-white shadow-md rounded-lg p-4 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition"
         >
           <img
-            src="src/assets/ic_riwayat_absen.svg"
+            src="assets/ic_riwayat_absen.svg"
             alt="Go"
             width={80}
             height={80}

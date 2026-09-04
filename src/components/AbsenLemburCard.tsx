@@ -311,7 +311,7 @@ const AbsenLemburCard: React.FC<AbsenLemburCardProps> = ({
             className="flex-1 flex items-center justify-center gap-2 py-3 text-white sm:text-base text-xs bg-primary hover:bg-red-800 transition"
           >
             <img
-              src="src/assets/ic_enter_outline.svg"
+              src="assets/ic_enter_outline.svg"
               alt="Absen Masuk Lembur"
             />
             Absen Masuk
@@ -320,7 +320,7 @@ const AbsenLemburCard: React.FC<AbsenLemburCardProps> = ({
             onClick={() => handleAbsenClick(0)}
             className="flex-1 flex items-center justify-center gap-2 py-3 text-gray-500 sm:text-base text-xs bg-muted hover:bg-gray-300 transition"
           >
-            <img src="src/assets/ic_sign_out.svg" alt="Absen Keluar Lembur" />
+            <img src="assets/ic_sign_out.svg" alt="Absen Keluar Lembur" />
             Absen Pulang
           </button>
         </div>
@@ -338,8 +338,8 @@ const AbsenLemburCard: React.FC<AbsenLemburCardProps> = ({
             <img
               src={
                 absenType === 1
-                  ? "src/assets/ic_lokasi_absen_masuk.svg"
-                  : "src/assets/ic_lokasi_absen_keluar.svg"
+                  ? "assets/ic_lokasi_absen_masuk.svg"
+                  : "assets/ic_lokasi_absen_keluar.svg"
               }
               alt="Lokasi Absen"
               className="mx-auto mb-4"
@@ -399,7 +399,7 @@ const AbsenLemburCard: React.FC<AbsenLemburCardProps> = ({
               className="text-white px-6 py-3 rounded-2xl mb-4 flex items-center justify-center mx-auto"
             >
               <img
-                src="src/assets/ic_button_camera.svg"
+                src="assets/ic_button_camera.svg"
                 alt="Capture Photo"
                 className="w-24 h-24"
               />

@@ -4,26 +4,26 @@ const navItems = [
   {
     href: "/dashboard",
     label: "Dashboard",
-    icon: "/src/assets/ic_dashboard.svg",
-    activeIcon: "/src/assets/ic_dashboard_active.svg",
+    icon: "/assets/ic_dashboard.svg",
+    activeIcon: "/assets/ic_dashboard_active.svg",
   },
   {
     href: "/info",
     label: "Info",
-    icon: "/src/assets/ic_info_pegawai.svg",
-    activeIcon: "/src/assets/ic_info_pegawai_active.svg",
+    icon: "/assets/ic_info_pegawai.svg",
+    activeIcon: "/assets/ic_info_pegawai_active.svg",
   },
   // {
   //   href: "/lainnya",
   //   label: "Lainnya",
-  //   icon: "/src/assets/ic_lainnya.svg",
-  //   activeIcon: "/src/assets/ic_lainnya_active.svg",
+  //   icon: "/assets/ic_lainnya.svg",
+  //   activeIcon: "/assets/ic_lainnya_active.svg",
   // },
   {
     href: "/akun",
     label: "Akun",
-    icon: "/src/assets/ic_akun.svg",
-    activeIcon: "/src/assets/ic_akun_active.svg",
+    icon: "/assets/ic_akun.svg",
+    activeIcon: "/assets/ic_akun_active.svg",
   },
 ];
 
@@ -45,9 +45,8 @@ const BottomNavigation = () => {
             className="w-6 h-6" // Ensure consistent icon size
           />
           <span
-            className={`text-[10px] font-medium ${
-              currentPath === item.href ? "text-primary" : "text-gray-500"
-            }`}
+            className={`text-[10px] font-medium ${currentPath === item.href ? "text-primary" : "text-gray-500"
+              }`}
           >
             {item.label}
           </span>

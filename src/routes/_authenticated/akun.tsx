@@ -23,7 +23,7 @@ function RouteComponent() {
           <p className="text-lg font-semibold">Informasi Akun</p>
           <div className="w-24 h-24 aspect-square rounded-full overflow-hidden shadow-md">
             <img
-              src={user?.emp_photo || "src/assets/ic_akun_avatar.svg"}
+              src={user?.emp_photo || "assets/ic_akun_avatar.svg"}
               alt="Profile Avatar"
               width={100}
               height={100}
@@ -43,7 +43,7 @@ function RouteComponent() {
           <div className="flex items-center justify-between bg-white p-3 rounded-lg shadow">
             <div className="flex items-center space-x-3">
               <img
-                src="src/assets/ic_create-outline.svg"
+                src="assets/ic_create-outline.svg"
                 alt="Edit Icon"
                 width={24}
                 height={24}
@@ -54,7 +54,7 @@ function RouteComponent() {
           <div className="flex items-center justify-between bg-white p-3 rounded-lg shadow">
             <div className="flex items-center space-x-3">
               <img
-                src="src/assets/ic_help-circle-outline.svg"
+                src="assets/ic_help-circle-outline.svg"
                 alt="About Icon"
                 width={24}
                 height={24}

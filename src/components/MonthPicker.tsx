@@ -17,7 +17,7 @@ const MonthPicker = ({
       onClick={() => monthPickerRef.current?.showPicker()}
     >
       <img
-        src="src/assets/ic_calendar.svg"
+        src="assets/ic_calendar.svg"
         alt="Calendar Icon"
         width={24}
         height={24}
@@ -26,7 +26,7 @@ const MonthPicker = ({
 
       {/* Dropdown Icon aligned to the right */}
       <img
-        src="src/assets/ic_dropdown.svg"
+        src="assets/ic_dropdown.svg"
         alt="Dropdown Icon"
         className="ml-auto text-gray-500"
       />
