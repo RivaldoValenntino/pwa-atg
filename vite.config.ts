@@ -11,8 +11,8 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: 'src/assets', // Ambil dari folder ini
-          dest: 'src'        // Salin ke folder dist/src/assets
+          src: 'src/assets/*',  // Tambahkan /* agar hanya 'isi' foldernya yang diambil
+          dest: 'src/assets'    // Pastikan dest-nya eksplisit menunjuk ke src/assets
         }
       ]
     }),
