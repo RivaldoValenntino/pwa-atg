@@ -2,12 +2,20 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tanstackRouter from "@tanstack/router-plugin/vite";
 import { VitePWA } from "vite-plugin-pwa";
-
+import { viteStaticCopy } from "vite-plugin-static-copy";
 export default defineConfig({
   base: "/",
   plugins: [
     tanstackRouter({}),
     react(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'src/assets', // Ambil dari folder ini
+          dest: 'src'        // Salin ke folder dist/src/assets
+        }
+      ]
+    }),
     VitePWA({
       strategies: "generateSW",
       registerType: "autoUpdate",
